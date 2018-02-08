@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=PointLess
+comment1.params=
+comment1.target=PointLess()
+comment10.params=p
+comment10.target=int\ getY(java.awt.Point)
+comment11.params=p
+comment11.target=java.lang.String\ toString(java.awt.Point)
+comment12.params=dx\ dy
+comment12.target=java.awt.Point\ translate(int,\ int)
+comment2.params=p
+comment2.target=PointLess(java.awt.Point)
+comment3.params=
+comment3.target=double\ distanceFromOrigin()
+comment4.params=o
+comment4.target=boolean\ equals(java.lang.Object)
+comment5.params=p1\ p2
+comment5.target=double\ Slope(java.awt.Point,\ java.awt.Point)
+comment6.params=p1\ p2
+comment6.target=boolean\ isCollinear(java.awt.Point,\ java.awt.Point)
+comment7.params=g
+comment7.target=void\ Draw(java.awt.Graphics)
+comment8.params=x\ y\ g
+comment8.target=void\ Draw(int,\ int,\ java.awt.Graphics)
+comment9.params=p
+comment9.target=int\ getX(java.awt.Point)
+numComments=13

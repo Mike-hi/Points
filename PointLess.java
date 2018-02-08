@@ -57,6 +57,14 @@ public class PointLess {
             return false;
         }
     }
+    public void Draw(Graphics g){
+        g.setColor(Color.blue);
+        g.drawOval(34, 76, 56, 56);
+    }
+    public void Draw(int x, int y, ArrayList ,Graphics g){
+        g.setColor(Color.red);
+        g.drawOval(x, y, 10, 10);
+    }
 
     // Returns the x-coordinate of this point.
     public int getX(Point p) {

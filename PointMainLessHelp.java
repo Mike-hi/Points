@@ -5,10 +5,15 @@ import java.util.Scanner;
 import java.util.ArrayList;
 public class PointMainLessHelp {
     public static void main(String[] args) {
+        //5 added drawing panel & grapics
+        DrawingPanel panel = new DrawingPanel(1000,1000);
+        Graphics g = panel.getGraphics();
         // create two Point objects
         Point p1 = new Point(1,2);
         Point p2 = new Point(3,4);
         PointLess pMore = new PointLess();
+        //6 draw method used
+        pMore.Draw(g);
 
         // print each point and its distance from origin
         System.out.println("p1 is " + p1);
@@ -28,20 +33,26 @@ public class PointMainLessHelp {
         Scanner scnr = new Scanner(System.in);
         ArrayList <Point> user = new ArrayList <Point>();
         boolean b = false;
+        int x = 0;
+        int y = 0;
+        Point temp;
         while(b != true){
             System.out.println("enter an x for a Point :");
-            int x = scnr.nextInt();
+            x = scnr.nextInt();
             System.out.println("enter an y for a Point :");
-            int y = scnr.nextInt();
+            y = scnr.nextInt();
             
-            Point temp = new Point(x, y);
+            temp = new Point(x, y);
             user.add(temp);
             
-            System.out.println("type / to stop");
+            System.out.println("type / to stop, Otherwise type something random");
             String stop = scnr.next();
             if(stop.equals("/")){
                 b = true;
             }
+        }
+        for(int u = 0; u < user.size(); u++ ){
+            pMore.Draw(temp.x, temp.y, user, g);
         }
     }
 }
