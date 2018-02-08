@@ -2,6 +2,7 @@
 // Seventh version: Immutable.
 // Class invariant: x >= 0 && y >= 0.
 import java.awt.*;
+import java.util.ArrayList;
 public class PointLess {
     private int x;
     private int y;
@@ -61,9 +62,11 @@ public class PointLess {
         g.setColor(Color.blue);
         g.drawOval(34, 76, 56, 56);
     }
-    public void Draw(int x, int y, ArrayList ,Graphics g){
+    public void Draw(ArrayList <Point> user, Graphics g){
         g.setColor(Color.red);
-        g.drawOval(x, y, 10, 10);
+        for(int i = 0; i <= user.size() - 1; i++){
+            g.drawOval(user.get(i).x, user.get(i).y, 10, 10);
+        }
     }
 
     // Returns the x-coordinate of this point.

@@ -35,7 +35,7 @@ public class PointMainLessHelp {
         boolean b = false;
         int x = 0;
         int y = 0;
-        Point temp;
+        Point temp = new Point(0, 0);
         while(b != true){
             System.out.println("enter an x for a Point :");
             x = scnr.nextInt();
@@ -51,8 +51,6 @@ public class PointMainLessHelp {
                 b = true;
             }
         }
-        for(int u = 0; u < user.size(); u++ ){
-            pMore.Draw(temp.x, temp.y, user, g);
-        }
+        pMore.Draw(user, g);
     }
 }
